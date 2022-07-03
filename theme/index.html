@@ -40,7 +40,126 @@
 	<link rel="stylesheet" href="plugins/slick-carousel/slick-theme.css">
 	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
+<style>
+	.Pani{
+		position: relative;
+  text-align: center;
+  color: white;
+	}
+	.centeredpani{
+		
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color:red;
+  text-decoration: none;
 
+	}
+	*{
+    margin: 0; padding: 0;
+    border: 0; outline: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --theme-col: #2d4bf0;
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+footer{
+    background-color: #111010;
+}
+.f-item-con{
+    padding: 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem;
+}
+footer .app-name{
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+.app-name .app-initial{
+    color: var(--theme-col);
+}
+footer .app-info p{
+    color: white;
+    padding-left: 1.65rem;
+}
+
+footer .footer-title{ 
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    height: fit-content;
+}
+footer ul{ 
+    padding-left: 1.75rem;
+    color: white;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem;
+    margin-top: .5rem;
+}
+footer ul li{ 
+    margin: .25rem 0;
+    cursor: pointer;
+    color: #d4d4d4;
+    width: fit-content;
+}
+footer ul li:hover{
+    color: white;
+}
+footer .help-sec{
+    grid-column-start: 2;
+}
+footer .cr-con{
+    background-color: #232127;
+    color: white;
+    padding: 1rem 4rem;
+    text-align: center;
+}
+.g-i-t{
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.g-i-t form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+form .g-inp{
+    padding: .25rem .5rem;
+    font-size: 16px;
+}
+.g-inp textarea{
+    height: 150px;
+}
+.f-btn{
+    padding: .25rem 1rem;
+    background-color: var(--theme-col);
+    border-radius: .25rem;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+</style>
 
 </head>
 
@@ -63,31 +182,7 @@
 	</div>
 	<!-- End Preloader
 	==================================== -->
-
- <!--
-Welcome Slider
-==================================== -->
-
- <section class="hero-area overlay" style="background-image: url('images/banner/hero-area.jpg');">
- 	<!-- <video autoplay muted loop class="hero-video">
-		<source src="images/banner/hero-video.mp4" type="video/mp4">
-	</video> -->
- 	<div class="block">
- 		<div class="video-button mb-5">
- 			<!-- <a class="popup-video" href="https://www.youtube.com/watch?v=jrkvirglgaQ">
- 				<i class="tf-ion-play"></i>
- 			</a> -->
-			<img src="images/centre-logo.png" alt="Main Logo" style="width:180px; height:180px; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
- 		</div>
- 		<h1>ML <span class="color">ACCELERATOR </span>SUMMIT <span class="color">2.0</span></h1>
- 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, excepturi. At recusandae sit perferendis
- 			autem,iste tempora nostrum numquam sapiente!</p>
- 		<a href="#services" class="btn btn-transparent smooth-scroll">Register</a>
- 	</div>
- </section>
-
- <!-- 
-Sticky Navigation
+		<!--Sticky Navigation
 ==================================== -->
 <header id="navigation" class="navigation">
 <div class="container">
@@ -95,9 +190,9 @@ Sticky Navigation
     <nav class="navbar navbar-expand-lg navbar-dark px-0">
       <!-- logo -->
       <a class="navbar-brand logo" href="index.html">
-        <!-- <img src="images/logo.png" alt="Website Logo" /> -->
-        <svg width="40px" height="40px" viewBox="0 0 45 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
+         <img src="images/WHITEML.png" alt="Website Logo" /> 
+        <!-- <svg width="40px" height="40px" viewBox="0 0 45 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"> -->
           <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Group" transform="translate(2.000000, 2.000000)" stroke="#57CBCC" stroke-width="3">
               <ellipse id="Oval" cx="20.5" cy="20" rx="20.5" ry="20"></ellipse>
@@ -148,6 +243,31 @@ Sticky Navigation
 </header>
 <!--
 End Sticky Navigation
+
+ <!--
+Welcome Slider
+==================================== -->
+
+ <section class="hero-area overlay" style="background-image: url('images/banner/hero-area.jpg');">
+ 	<!-- <video autoplay muted loop class="hero-video">
+		<source src="images/banner/hero-video.mp4" type="video/mp4">
+	</video> -->
+ 	<div class="block">
+ 		<div class="video-button mb-5">
+ 			<!-- <a class="popup-video" href="https://www.youtube.com/watch?v=jrkvirglgaQ">
+ 				<i class="tf-ion-play"></i>
+ 			</a> -->
+			<img src="images/centre-logo.png" alt="Main Logo" style="width:180px; height:180px; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
+ 		</div>
+ 		<h1>ML <span class="color">ACCELERATOR </span>SUMMIT <span class="color">2.0</span></h1>
+ 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, excepturi. At recusandae sit perferendis
+ 			autem,iste tempora nostrum numquam sapiente!</p>
+ 		<a href="#services" class="btn btn-transparent smooth-scroll">Register</a>
+ 	</div>
+ </section>
+
+ <!-- 
+
 ==================================== -->
 
 <!--
@@ -497,124 +617,14 @@ Start Our Team
 				</div>
 			</div>
 		</div> -->
-		<div class="row mx-auto filtr-container">
-			<div class="filtr-item col-lg-4 col-md-6" data-category="development">
-				<div class="portfolio-block">
-					<img src="images/portfolio/portfolio-1.jpg" alt="">
-					<div class="caption">
-						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-1.jpg"
-							data-lightbox="image-1">
-							<i class="tf-ion-android-search"></i>
-						</a>
-						<h4><a href="">Tag Design</a></h4>
-						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
-					</div>
-				</div>
-			</div>
-			<div class="filtr-item col-lg-4 col-md-6" data-category="design">
-				<div class="portfolio-block">
-					<img src="images/portfolio/portfolio-2.jpg" alt="">
-					<div class="caption">
-						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-2.jpg"
-							data-lightbox="image-1">
-							<i class="tf-ion-android-search"></i>
-						</a>
-						<h4><a href="">Sound system</a></h4>
-						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
-					</div>
-				</div>
-			</div>
-			<div class="filtr-item col-lg-4 col-md-6" data-category="design, development">
-				<div class="portfolio-block">
-					<img src="images/portfolio/portfolio-3.jpg" alt="">
-					<div class="caption">
-						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-3.jpg"
-							data-lightbox="image-1">
-							<i class="tf-ion-android-search"></i>
-						</a>
-						<h4><a href="">Clock Product</a></h4>
-						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
-					</div>
-				</div>
-			</div>
-			<div class="filtr-item col-lg-4 col-md-6" data-category="photography, development">
-				<div class="portfolio-block">
-					<img src="images/portfolio/portfolio-4.jpg" alt="">
-					<div class="caption">
-						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-4.jpg"
-							data-lightbox="image-1">
-							<i class="tf-ion-android-search"></i>
-						</a>
-						<h4><a href="">Bottol Label</a></h4>
-						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
-					</div>
-				</div>
-			</div>
-			<div class="filtr-item col-lg-4 col-md-6" data-category="design">
-				<div class="portfolio-block">
-					<img src="images/portfolio/portfolio-5.jpg" alt="">
-					<div class="caption">
-						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-5.jpg"
-							data-lightbox="image-1">
-							<i class="tf-ion-android-search"></i>
-						</a>
-						<h4><a href="">Shopping Bag</a></h4>
-						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
-					</div>
-				</div>
-			</div>
-			<div class="filtr-item col-lg-4 col-md-6" data-category="photography">
-				<div class="portfolio-block">
-					<img src="images/portfolio/portfolio-6.jpg" alt="">
-					<div class="caption">
-						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-6.jpg"
-							data-lightbox="image-1">
-							<i class="tf-ion-android-search"></i>
-						</a>
-						<h4><a href="">Tag Design</a></h4>
-						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
-					</div>
-				</div>
-			</div>
-			<div class="filtr-item col-lg-4 col-md-6" data-category="design">
-				<div class="portfolio-block">
-					<img src="images/portfolio/portfolio-7.jpg" alt="">
-					<div class="caption">
-						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-7.jpg"
-							data-lightbox="image-1">
-							<i class="tf-ion-android-search"></i>
-						</a>
-						<h4><a href="">Business Card</a></h4>
-						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
-					</div>
-				</div>
-			</div>
-			<div class="filtr-item col-lg-4 col-md-6" data-category="design">
-				<div class="portfolio-block">
-					<img src="images/portfolio/portfolio-8.jpg" alt="">
-					<div class="caption">
-						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-8.jpg"
-							data-lightbox="image-1">
-							<i class="tf-ion-android-search"></i>
-						</a>
-						<h4><a href="">Stationary Design</a></h4>
-						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
-					</div>
-				</div>
-			</div>
-			<div class="filtr-item col-lg-4 col-md-6" data-category="photography, development">
-				<div class="portfolio-block">
-					<img src="images/portfolio/portfolio-1.jpg" alt="">
-					<div class="caption">
-						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-1.jpg"
-							data-lightbox="image-1">
-							<i class="tf-ion-android-search"></i>
-						</a>
-						<h4><a href="">Tag Design</a></h4>
-						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
-					</div>
-				</div>
-			</div>
+		<div class="row mx-auto filtr-container" style="display: flex; justify-content: space-between;">
+			<div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7372.280681656533!2d88.36555082422315!3d22.49891712264853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02712485fb0c29%3A0x6ebc31fad40fb989!2sTEQIP%20Building!5e0!3m2!1sen!2sin!4v1656865507998!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<div class="Pani">
+			<img src="https://assets.telegraphindia.com/telegraph/e451d0a3-aa85-4ecf-aa3d-fefdea0cc13e.jpg" style="height: 450px; width: 500px; opacity: 0.4;"  alt="">
+			<div class="centeredpani">JadavpurUniversity</div>
+		</div>
 		</div>
 	</div> <!-- end container -->
 </section> <!-- End section -->
@@ -640,41 +650,46 @@ Start Counter Section
 				<!-- section title -->
 				<div class="title text-center wow fadeIn" data-wow-duration="500ms">
 					<h2>Get In <span class="color">Touch</span></h2>
-					<div class="border"></div>
+					<div class="border">
+						
+					</div>
+					<br>
+					<br>
+					<div class="contact-info col-lg-6 wow fadeInUp" data-wow-duration="500ms">
+						<div class="contact-details">
+							<div class="con-info clearfix">
+								<i class="tf-map-pin" style="margin-left: auto;"></i>
+								<span>
+									<a href="#portfolio">ADDRESS: 188, Raja S.C. Mallick Rd, Kolkata - 700032, India</a>
+								</span>
+							</div>
+		
+							<div class="con-info clearfix">
+								<i class="tf-ion-ios-telephone-outline"></i>
+								<span>
+									<a href="tel:+919836105125">PHONE NUMBER: +919836105125</a>
+								</span>
+							</div>
+		
+							<!-- <div class="con-info clearfix">
+								<i class="tf-ion-iphone"></i>
+								<span>Fax: +880-31-000-000</span>
+							</div> -->
+		
+							<div class="con-info clearfix">
+								<i class="tf-ion-ios-email-outline"></i>
+								<span>
+									<a href="mailto:jaduniv.ieee@gmail.com">Email: jaduniv.ieee@gmail.com</a>
+								</span>
+							</div>
+						</div>
+					</div
 				</div>
 				<!-- /section title -->
 			</div>
 
 			<!-- Contact Details -->
-			<div class="contact-info col-lg-6 wow fadeInUp" data-wow-duration="500ms">
-				<div class="contact-details">
-					<div class="con-info clearfix">
-						<i class="tf-map-pin" style="margin-left: auto;"></i>
-						<span>
-							<a href="#portfolio">ADDRESS: 188, Raja S.C. Mallick Rd, Kolkata - 700032, India</a>
-						</span>
-					</div>
-
-					<div class="con-info clearfix">
-						<i class="tf-ion-ios-telephone-outline"></i>
-						<span>
-							<a href="tel:+919836105125">PHONE NUMBER: +919836105125</a>
-						</span>
-					</div>
-
-					<!-- <div class="con-info clearfix">
-						<i class="tf-ion-iphone"></i>
-						<span>Fax: +880-31-000-000</span>
-					</div> -->
-
-					<div class="con-info clearfix">
-						<i class="tf-ion-ios-email-outline"></i>
-						<span>
-							<a href="mailto:jaduniv.ieee@gmail.com">Email: jaduniv.ieee@gmail.com</a>
-						</span>
-					</div>
-				</div>
-			</div>
+			
 			<!-- / End Contact Details -->
 
 			<!-- Contact Form -->
@@ -716,47 +731,54 @@ Start Counter Section
 
 <!-- end Contact Area
 ========================================== -->
-<footer id="footer" class="bg-one">
-	<div class="container">
-		<div class="row wow fadeInUp" data-wow-duration="500ms">
-			<div class="col-lg-12">
-
-				<!-- Footer Social Links -->
-				<div class="social-icon">
-					<ul class="list-inline">
-						<li class="list-inline-item"><a href="https://facebook.com/themefisher"><i class="tf-ion-social-facebook"></i></a></li>
-						<li class="list-inline-item"><a href="https://twitter.com/themefisher"><i class="tf-ion-social-twitter"></i></a></li>
-						<li class="list-inline-item"><a href="https://www.youtube.com/channel/UCx9qVW8VF0LmTi4OF2F8YdA"><i class="tf-ion-social-youtube"></i></a></li>
-						<li class="list-inline-item"><a href="https://dribbble.com/themefisher"><i class="tf-ion-social-dribbble-outline"></i></a></li>
-						<li class="list-inline-item"><a href="https://pinterest.com/themefisher"><i class="tf-ion-social-pinterest-outline"></i></a></li>
-					</ul>
-				</div>
-				<!--/. End Footer Social Links -->
-
-				<!-- copyright -->
-				<div class="copyright text-center">
-					<a href="index.html">
-						<!-- <img src="images/logo-meghna.png" alt="Meghna" />  -->
-						<svg width="40px" height="40px" viewBox="0 0 45 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink">
-							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<g id="Group" transform="translate(2.000000, 2.000000)" stroke="#57CBCC" stroke-width="3">
-									<ellipse id="Oval" cx="20.5" cy="20" rx="20.5" ry="20"></ellipse>
-									<path d="M6,7 L33.5,34.5" id="Line-2" stroke-linecap="square"></path>
-									<path d="M21,20 L34,7" id="Line-3" stroke-linecap="square"></path>
-								</g>
-							</g>
-						</svg>
-					</a>
-
-					<p class="mt-3">Copyright ©2022 All rights reserved | Made  by Technical Team, IEEE JU</a>.</p>
-				</div>
-				<!-- /copyright -->
-
-			</div> <!-- end col lg 12 -->
-		</div> <!-- end row -->
-	</div> <!-- end container -->
-</footer> <!-- end footer -->
+<footer>
+	<div class="f-item-con">
+		<div class="app-info">
+			<span class='app-name'>
+				<span class='app-initial'>R</span>awnge
+			</span>
+			<p>We provides you with <strong>Well organised</strong> and <strong>SEO friendly</strong> Website Designs.</p>
+		</div>
+		<div class="useful-links">
+			<div class="footer-title">Useful Links</div>
+			<ul>
+				<li>Courses</li>
+				<li>Sign In</li>
+				<li>About Us</li>
+				<li>Become an Affiliate</li>
+				<li>Advertise with Us</li>
+				<li>Terms and Conditions</li>
+			</ul>
+		</div>
+		<div class="help-sec">
+			<div class="footer-title">Help</div>
+			<ul>
+				<li>Help Me</li>
+				<li>Feedback</li>
+				<li>Report a Issue / Bug</li>
+			</ul>
+		</div>
+		<class class="g-i-t">
+			<div class="footer-title">Get in Touch</div>
+			<div class="social-icon">
+				<ul class="list-inline">
+					<li class="list-inline-item"><a href="https://facebook.com/themefisher"><i class="tf-ion-social-facebook"></i></a></li>
+					<li class="list-inline-item"><a href="https://twitter.com/themefisher"><i class="tf-ion-social-twitter"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.youtube.com/channel/UCx9qVW8VF0LmTi4OF2F8YdA"><i class="tf-ion-social-youtube"></i></a></li>
+					<li class="list-inline-item"><a href="https://dribbble.com/themefisher"><i class="tf-ion-social-dribbble-outline"></i></a></li>
+					<li class="list-inline-item"><a href="https://pinterest.com/themefisher"><i class="tf-ion-social-pinterest-outline"></i></a></li>
+				</ul>
+			</div>	
+			</class>
+			<div>
+				<img src="" alt="">
+			</div>
+			<!--/. End Footer Social Links -->
+		</div>
+	</div>
+	<div class='cr-con'>Copyright &copy; 2022 | Made by Rawnge</div>
+</footer>
+ <!-- end footer -->
 
 	<!-- 
 	Essential Scripts
